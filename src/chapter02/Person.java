@@ -3,7 +3,7 @@ package chapter02;
 public class Person {
     private String name;
     private int age; // 접근제한
-    private cashAmount;
+    private int cashAmount;
     private BankAccount account;
 
     public void setAge(int newAge) {
@@ -34,14 +34,11 @@ public class Person {
         return cashAmount;
     }
 
-    public void setBankAccount(int newBankAccount) {
-        if (newBankAccount >= 0) {
-            BankAccount = newBankAccount;
-        }
+    public void setAccount(BankAccount newAccount) {
+            account = newAccount;
     }
 
-    public int getBankAccount() {
-        return BankAccount;
+    public BankAccount getAccount() { // account의 자료형 BankAccount
+        return account;
     }
-
 }
